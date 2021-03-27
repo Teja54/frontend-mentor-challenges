@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --gray-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+}
+body {
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 350px;
+  background: url('images/bg-pattern-top.svg') no-repeat, url('images/bg-pattern-bottom.svg') no-repeat var(--dark-cyan);
+  background-position: right 52vw top -71vh, left 48vw bottom -189vh;
+  background-clip: border-box, border-box;
+  background-size: auto, auto;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#card {
+  background: white url(./images/bg-pattern-card.svg) no-repeat top center;
+  background-size: auto;
+  width: 346px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+  margin: 0 auto;
+}
+#profile-img {
+  margin-top: 88px;
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.user {
+  margin-top: 25px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.username {
+  display: inline;
+  font-size: 1rem;
+  color: var(--dark-blue);
+  padding-right: 1px;
+  font-weight: 700;
+}
+.user-age {
+  display: inline;
+  color: var(--dark-gray);
+  padding-left: 3px;
+}
+.user-location {
+  padding-top: 10px;
+  font-size: .9rem;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  width: 85%;
+  margin-top: 9px;
+  padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.stat-number {
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: 18px;
+  margin: 17px 5px 7px 3px;
+}
+
+.stat-label {
+  font-size: .8rem;
+  letter-spacing: 1.7px;
+  color: var(--gray-blue);
+}
+.footer {
+  padding: 1rem;
+}
+.footer p {
+  line-height: 1.5;
+  text-align: center;
+} 
