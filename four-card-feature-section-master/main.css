@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: inherit;
+}
+html {
+  font-size: 15px;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--very-light-gray);
+}
+.container {
+  width: 80%;
+  margin: 5rem auto;
+  margin-bottom: 0;
+}
+header {
+  text-align: center;
+}
+header h3 {
+  font-size: 1.5rem;
+}
+header h3:nth-child(1), header p, .card p {
+  color: var(--grayish-blue);
+}
+header h3:nth-child(2), .card h4 {
+  color: var(--very-dark-blue);
+}
+.cards {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  background: #fff;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  margin: 1rem 0;
+  padding: 2rem;
+  width: 23rem;
+}
+.card:nth-child(1) {
+  border-top: 4px solid var(--cyan);
+}
+.card:nth-child(2) {
+  border-top: 4px solid var(--red);
+}
+.card:nth-child(3) {
+  border-top: 4px solid var(--orange);
+}
+.card:nth-child(4) {
+  border-top: 4px solid var(--blue);
+}
+.card h4 {
+  font-size: 1.2rem;
+  margin-bottom: .3rem;
+}
+.card p {
+  margin-bottom: .5rem;
+}
+.card img {
+  margin-top: 1rem;
+  float: right;
+  clear: both;
+}
+.attribution {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1100px) {
+  .container {
+    width: 90vw;
+    margin: 1rem auto;
+    margin-bottom: 0;
+  }
+  .cards {
+    margin-top: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .card {
+    margin: 0;
+  }
+  .card:nth-child(1), .card:nth-child(3) {
+    margin-top: 10rem;
+  }
+  .card:nth-child(2) {
+    margin-top: -5rem;
+  }
+  .card:nth-child(4) {
+    margin-top: -7rem;
+  }
+}
