@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::after, *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #004241;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.container {
+  max-width: 800px;
+  padding: 2rem;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .cards .card {
+  padding: 2rem;
+}
+
+.container .cards .card > * {
+  margin: 1rem 0;
+}
+
+.container .cards .card h2 {
+  text-transform: uppercase;
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.container .cards .card p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.container .cards .card .btn {
+  margin-top: 2rem;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 2rem;
+  display: block;
+  width: 150px;
+}
+
+.container .cards .card-1 {
+  background-color: #e38826;
+}
+
+.container .cards .card-2 {
+  background-color: #006970;
+}
+
+.container .cards .card-3 {
+  background-color: #004241;
+}
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 800px) {
+  .container {
+    padding-top: 50px;
+  }
+  .container .cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container .cards .card {
+    height: 450px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+// colors
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+$very-light-gray: hsl(0, 0%, 95%);
+
+// fonts
+$big-shoulders-display: 'Big Shoulders Display', cursive;
+$lexend-deca: 'Lexend Deca', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::after, *::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: $very-dark-cyan;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $transparent-white;
+}
+
+.container {
+  max-width: 800px;
+  padding: 2rem;
+  margin: 0 auto;
+  padding-top: 100px;
+
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .card {
+      padding: 2rem;
+
+      & > * {
+        margin: 1rem 0;
+      }
+
+      h2 {
+        text-transform: uppercase;
+        color: $very-light-gray;
+        font-family: $big-shoulders-display;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+      }
+      p {
+        color: $transparent-white;
+        font-family: $lexend-deca;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+      }
+
+      .btn {
+        margin-top: 2rem;
+        background-color: $very-light-gray;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 2rem;
+        display: block;
+        width: 150px;
+      }
+    }
+
+    .card-1 {
+      background-color: $bright-orange;
+    }
+    .card-2 {
+      background-color: $dark-cyan;
+    }
+    .card-3 {
+      background-color: $very-dark-cyan;
+    }
+  }
+}
+
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+@media (min-width: 800px) {
+  
+  .container {
+    padding-top: 50px;
+
+    .cards {
+      flex-direction: row;
+
+      .card {
+        height: 450px;
+      }
+    }
+  }
+}
