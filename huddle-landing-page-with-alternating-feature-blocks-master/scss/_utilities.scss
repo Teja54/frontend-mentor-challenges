@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+$pink: hsl(322, 100%, 66%);
+$light-pink: hsl(322, 100%, 60%);
+$poppins: 'Poppins', sans-serif;
+$open-sans: 'Open Sans', san-serif;
+$very-pale-cyan: hsl(193, 100%, 96%);
+$very-dark-cyan: hsl(192, 100%, 9%);
+$grayish-blue: hsl(208, 11%, 55%);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: $open-sans;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-size: 15px;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 30px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.btn-primary {
+  background-color: $pink;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: $very-pale-cyan;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-block;
+
+  &:hover {
+    background-color: $light-pink;
+  }
+}
+h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 30px;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+h2,h3, h4 {
+  font-family: $poppins;
+}
+@media (max-width: 450px) {
+  .btn-primary {
+    padding: .5rem 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+}

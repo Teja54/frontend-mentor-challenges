@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Open Sans", san-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn-primary {
+  background-color: #ff52bf;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: #ebfbff;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #ff33b4;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+h2, h3, h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 450px) {
+  .btn-primary {
+    padding: .5rem 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+header {
+  padding: 30px 0;
+  background-color: #ebfbff;
+  background-image: url(/images/bg-hero-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .btn {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  padding: .5rem 1rem;
+  border-radius: 1.5rem;
+  color: #00252e;
+  font-weight: 700;
+}
+
+.community-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+  text-align: center;
+}
+
+.section-wrapper {
+  padding: 50px 0;
+}
+
+.section-wrapper .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.connect {
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  padding: 2rem 1rem;
+  max-width: 300px;
+  color: #00252e;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: -70px;
+  z-index: 5555;
+  position: relative;
+}
+
+footer {
+  background-color: #00252e;
+  color: #ebfbff;
+  position: relative;
+  padding-top: 100px;
+}
+
+footer .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-container .footer-logo {
+  margin-bottom: 30px;
+}
+
+footer .footer-container span {
+  margin-right: 10px;
+}
+
+footer .footer-container li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+footer .footer-container li:hover {
+  -webkit-text-decoration: solid underline;
+          text-decoration: solid underline;
+}
+
+footer .footer-container .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+footer .footer-container .social-icons li {
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: .3rem;
+  width: 35px;
+  height: 35px;
+}
+
+footer .footer-container .social-icons li a {
+  color: #fff;
+}
+
+footer .footer-container .social-icons li a:hover {
+  color: #ff52bf;
+}
+
+@media (min-width: 768px) {
+  header {
+    background-image: url(/images/bg-hero-desktop.svg);
+  }
+  .community-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+  }
+  .section-wrapper .info-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section-wrapper .info-container .info-text {
+    width: 50%;
+  }
+  .section-wrapper .info-container .info-img {
+    width: 40%;
+  }
+  .section-wrapper .info-section-2 .info-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .connect {
+    max-width: 500px;
+  }
+  footer .footer-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-container .address {
+    width: 25%;
+  }
+}
+
+@media (max-width: 450px) {
+  .logo {
+    width: 120px;
+  }
+  .btn {
+    font-size: .7rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .connect {
+    max-width: 200px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
