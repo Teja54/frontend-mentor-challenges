@@ -1,0 +1,247 @@
+@import './utilities';
+
+.navbar {
+  @include flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  .logo {
+    cursor: pointer;
+  }
+  .nav-links {
+    @include flex;
+    gap: 1.5rem;
+
+    a {
+      color: $very-dark-blue;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.header-content {
+  @include flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  padding: 50px 0;
+
+  input[type="email"] {
+    width: 100%;
+    padding: .5rem 1rem;
+    margin-bottom: 10px;
+    border: 2px solid $moderate-cyan;
+    border-radius: 5px;
+    outline: none;
+
+    &::placeholder {
+      font-size: 1rem;
+    }
+  }
+}
+.info {
+  background-image: url(/images/bg-curve-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+
+  .info-wrapper {
+    @include flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+
+    .info-text {
+      h3 {
+        text-align: center;
+      }
+  
+      .active {
+        padding-bottom: 5px;
+        border-bottom: 1.5px solid $moderate-cyan;
+        text-align: center;
+        display: inline-block;
+      }
+  
+      .info-box {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 1.2rem;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+        .author {
+          @include flex;
+          justify-content: start;
+          gap: 1rem;
+
+          img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%; 
+          }
+          h5 {
+            font-size: 1rem;
+            font-family: $raleway;
+          }
+          p {
+            font-size: .9rem;
+          }
+        }
+      }
+    }
+    
+  }
+  
+}
+
+.access {
+  background-color: $desaturated-blue;
+  color: $light-grayish-blue;
+  padding: 50px 0;
+  text-align: center;
+  .access-container {
+    display: flex;
+    flex-direction: column;
+
+    .email-box {
+      input[type="email"] {
+        width: 100%;
+        padding: .5rem 1rem;
+        margin-bottom: 10px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        outline: none;
+      }
+    }
+  }
+}
+footer {
+  background-color: $very-dark-blue;
+  color: $light-grayish-blue;
+  padding: 50px 0;
+  
+  .footer {
+    @include flex;
+    flex-direction: column;
+
+    li {
+      margin-bottom: 10px;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        color: $desaturated-blue;
+      }
+    }
+    .social-icons {
+      display: flex;
+      gap: 18px;
+      cursor: pointer;
+      margin-top: 10px;
+      
+      li {
+        text-align: center;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        padding: .3rem;
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .contact {
+      .footer-logo {
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 15px;
+        span {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .header-content {
+    flex-direction: row;
+    text-align: initial;
+
+    .header-text {
+      width: 50%;
+
+      .email-box {
+        display: flex;
+        gap: 10px;
+
+        div:nth-child(1) {
+          width: 60%;
+        }
+        div:nth-child(2) {
+          width: 40%;
+        }
+      }
+    }
+    
+    .header-avatar {
+      width: 40%;
+    }
+
+
+  }
+
+  .info {
+    background-image: url(/images/bg-curve-desktop.svg);
+
+    .info-wrapper {
+      flex-direction: row;
+
+      .info-text {
+        text-align: left;
+      }
+    }
+  }
+
+  .access {
+    text-align: left;
+    .access-container {
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      .access-text {
+        width: 40%;
+      }
+      .email-box {
+        width: 50%;
+
+        div:nth-child(2) {
+          width: 30%;
+          float: right;
+          clear: both;
+        }
+      }
+    }
+  }
+
+  footer {
+    text-align: left;
+
+    .footer {
+      justify-content: space-between;
+      flex-direction: row;
+
+      li {
+        text-align: left;
+      }
+
+    }
+  }
+}
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+$very-dark-blue: hsl(243, 87%, 12%);
+$desaturated-blue: hsl(238, 22%, 44%);
+$bright-blue: hsl(224, 93%, 58%);
+$hover-color: hsl(224, 100%, 65%);
+$moderate-cyan: hsl(170, 45%, 43%);
+$light-grayish-blue: hsl(240, 75%, 98%);
+$light-gray: hsl(0, 0%, 75%);
+$open-sans: 'Open Sans', sans-serif;
+$raleway: 'Raleway', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::after, *::before {
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-family: $open-sans;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h3 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 30px;
+  font-family: $raleway;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 30px;
+}
+.btn-primary {
+  width: 100%;
+  background-color: $bright-blue;
+  color: $light-grayish-blue;
+  padding: .5rem 1rem;
+  text-align: center;
+  border-radius: 5px;
+  transition: all .2s linear;
+  cursor: pointer;
+  border: 2px solid $bright-blue;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 2.2rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+}
+html {
+  font-size: 16px;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header {
+  padding-top: 20px;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+p {
+  font-family: $open-sans;
+}
