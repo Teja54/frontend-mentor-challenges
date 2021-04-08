@@ -1,0 +1,40 @@
+.productive {
+  padding: 50px 0;
+
+  .productive-section {
+    @include flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+
+    .active {
+      text-decoration: underline;
+      cursor: pointer;
+      color: $accent-color-cyan;
+
+      span {
+        margin-left: 5px;
+      }
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .productive {
+
+    .productive-section {
+      flex-direction: row;
+      text-align: left;
+
+      .productive-text {
+        width: 50%;
+      }
+      .productive-img {
+        width: 40%;
+      }
+    }
+  }
+}

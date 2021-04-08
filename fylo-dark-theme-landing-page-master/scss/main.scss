@@ -1,0 +1,13 @@
+@import './utilities';
+@import './nav';
+@import './intro';
+@import './features';
+@import './productive';
+@import './testimonials';
+@import './access';
+@import './footer';
+
+header {
+  padding-top: 50px;
+  background-color: $primary-dak-blue-1;
+}
