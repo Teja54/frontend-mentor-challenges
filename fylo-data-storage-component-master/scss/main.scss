@@ -18,7 +18,7 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: 'Raleway', sans-serif;
-  background: url('/images/bg-mobile.png') center/cover no-repeat;
+  background: url('https://res.cloudinary.com/teja54/image/upload/v1618220422/bg-mobile_kow2wi.png') center/cover no-repeat;
 }
 .container {
   height: 100vh;
@@ -80,6 +80,9 @@ body {
         height: 20px;
         background-color: $very-dark-blue;
         border-radius: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
 
         .bar-progress {
           width: 195px;
@@ -88,7 +91,7 @@ body {
           background: $gradient;
           border-radius: 10px;
           display: flex;
-          justify-content: end;
+          justify-content: flex-end;
           align-items: center;
           transition: all 200ms linear;
 
@@ -150,7 +153,7 @@ body {
 
 @media (min-width: 900px) {
   body {
-    background-image: url('/images/bg-desktop.png');
+    background-image: url('https://res.cloudinary.com/teja54/image/upload/v1618220422/bg-desktop_xkyfji.png');
     background-repeat: no-repeat;
     background-color: $very-dark-blue;
     background-position: bottom;
@@ -191,4 +194,3 @@ body {
     }
   }
 }
-
