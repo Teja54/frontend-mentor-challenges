@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+$pink: hsl(322, 100%, 66%);
+$light-pink: hsl(321, 100%, 78%);
+$light-red: hsl(0, 100%, 63%);
+$very-dark-cyan: hsl(192, 100%, 9%);
+$very-pale-blue: hsl(207, 100%, 98%);
+$poppins: 'Poppins', sans-serif;
+$open-sans: 'Open Sans', san-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::after, *::before {
+  box-sizing: inherit;
+}
+html {
+  font-size: 16px;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: $open-sans;
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.btn-primary {
+  background-color: $pink;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: $very-pale-blue;
+  font-weight: 700;
+
+  &:hover {
+    background-color: $light-pink;
+  }
+}
+nav {
+  padding-top: 20px;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .btn {
+    border: 1px solid $pink;
+    padding: .5rem 1rem;
+    border-radius: 1.5rem;
+    color: $pink;
+  }
+}
+.community {
+  text-align: center;
+  padding: 100px 0;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  p {
+    margin-bottom: 3rem;
+  }
+
+  .mockup-img {
+    margin: 100px auto;
+  }
+}
+.stats-value {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+  margin-bottom: 100px;
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    color: rgb(168, 168, 168);
+  }
+}
+
+.info {
+  background-color: $very-pale-blue;
+  
+  .info-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5rem;
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    
+  }
+}
+
+.info-1 {
+  background-color: #fff;
+  margin: 100px 0;
+}
+
+// background patterns
+.bg-section {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+}
+.bg-section-top-1 {
+  background-image: url('https://res.cloudinary.com/teja54/image/upload/v1618222649/bg-section-top-mobile-1_depgmg.svg');
+}
+.bg-section-bottom-1 {
+  background-image: url('https://res.cloudinary.com/teja54/image/upload/v1618222647/bg-section-bottom-mobile-1_gpm5wv.svg');
+}
+.bg-section-top-2 {
+  background-image: url('https://res.cloudinary.com/teja54/image/upload/v1618222649/bg-section-top-mobile-2_du5acq.svg');
+}
+.bg-section-bottom-2 {
+  background-image: url('https://res.cloudinary.com/teja54/image/upload/v1618222648/bg-section-bottom-mobile-2_cocjhm.svg');
+  margin-bottom: 100px;
+}
+.connect {
+  text-align: center;
+  margin: 100px 0;
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+}
+.bg-footer {
+  background-image: url('https://res.cloudinary.com/teja54/image/upload/v1618222647/bg-footer-top-mobile_zw261b.svg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80px;
+  background-size: cover;
+}
+footer {
+  background-color: $very-dark-cyan;
+  color: #fff;
+  padding: 50px 0;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+    .address {
+      .footer-logo {
+        margin-bottom: 30px;
+      }
+      span {
+        padding-right: 10px;
+      }
+    }
+    .newsletter {
+      margin-bottom: 50px;
+
+      h4 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+      }
+
+      input[type="text"] {
+        display: block;
+        width: 100%;
+        padding: .5rem;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+      }
+
+      .btn-secondary {
+        border-radius: 10px;
+        float: right;
+        clear: both;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .social-icons {
+    i {
+      font-size: 1.4rem;
+      cursor: pointer;
+
+      &:hover {
+        color: $pink;
+      }
+    }
+  }
+} 
+.attribution {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 1rem;
+
+  a {
+    color: hsl(228, 45%, 44%);
+    background: #ffc600;
+  }
+}
+@media (min-width: 768px) {
+  .community {
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      width: 70%;
+      margin: 50px auto;
+    }
+  }
+  .stats-value {
+    flex-direction: row;
+  }
+  .info {
+    .info-container {
+      flex-direction: row;
+      text-align: initial;
+    }
+  }
+  .info-1 {
+    .info-container {
+      flex-direction: row-reverse;
+    }
+  }
+
+  // background patterns
+  .bg-section-top-1 {
+    background-image: url('https://res.cloudinary.com/teja54/image/upload/v1618222649/bg-section-top-desktop-1_v6hnlm.svg');
+  }
+  .bg-section-bottom-1 {
+    background-image: url('https://res.cloudinary.com/teja54/image/upload/v1618222647/bg-section-bottom-mobile-1_gpm5wv.svg');
+  }
+  .bg-section-top-2 {
+    background-image: url('https://res.cloudinary.com/teja54/image/upload/v1618222649/bg-section-top-desktop-2_nogjhw.svg');
+
+  }
+  .bg-section-bottom-2 {
+    background-image: url('https://res.cloudinary.com/teja54/image/upload/v1618222647/bg-section-bottom-desktop-2_xwmryw.svg');
+  }
+  .bg-footer {
+    background-image: url('https://res.cloudinary.com/teja54/image/upload/v1618222647/bg-footer-top-desktop_cvu3zb.svg');
+    height: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .sub-container {
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .community {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      width: 50%;
+      margin: 50px auto;
+    }
+  }
+  .bg-footer {
+    height: 130px;
+  }
+  footer {
+    .footer-container {
+      flex-direction: row;
+
+      .address {
+        width: 40%;
+      }
+      .newsletter {
+        width: 40%;
+      }
+    }
+
+    
+  }
+}
+
+@media (max-width: 430px) {
+  .navbar {
+    .logo img {
+      width: 100px;
+    }
+  }
+  .bg-footer {
+    height: 50px;
+  }
+}
