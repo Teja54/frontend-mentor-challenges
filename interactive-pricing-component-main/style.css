@@ -91,6 +91,9 @@ body{
 .features .right button:hover {
   color: #fff;
 }
+.no-submit {
+  display: none;
+}
 input[type="checkbox"] {
   position: relative;
   width: 40px;
