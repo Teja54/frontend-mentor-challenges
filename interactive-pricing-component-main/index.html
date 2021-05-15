@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Light blue background pattern -->
+  <div class="bg-pattern">
+    <img src="./images/bg-pattern.svg" alt="" class="bg-pattern-img" />
+  </div>
+
+  <!-- Container -->
+  <div class="container">
+    <div class="header">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial.</p>
+      <p>No credit card required.</p>
+    </div>
+
+    <div class="container-inner">
+      <div>
+        <div class="title">
+          <h4><span class="views">10k</span> Pageviews</h4>
+          <p class="priceCon desktop">
+            <span class="price" id="priceDesktop">$8</span> &nbsp;/month
+          </p>
+        </div>
+        <form class="form">
+          <input type="range" min="0" max="4" value="0" class="inputRange"/>
+        </form>
+        <p class="priceCon mobile">
+          <span class="price" id="priceMobile">$8</span> &nbsp;/month
+        </p>
+      </div>
+      <div class="toggle-container">
+        <p>Monthly Billing</p>
+        <span><input type="checkbox" id="toggleButton"/></span>
+        <p>
+          &nbsp;&nbsp;
+          <span>Yearly Billing</span>
+          <span class="discount"> -25% discount</span>
+        </p>
+      </div>
+      <div class="features">
+        <div class="left">
+          <p><img src="images/icon-check.svg" alt="check icon"> Unlimited websites</p>
+          <p><img src="images/icon-check.svg" alt="check icon"> 100% data ownership</p>
+          <p><img src="images/icon-check.svg" alt="check icon"> Email reports</p>
+        </div>
+  
+        <div class="right">
+          <button class="btn">Start my trial</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
