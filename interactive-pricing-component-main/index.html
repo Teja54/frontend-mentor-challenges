@@ -37,7 +37,8 @@
           </p>
         </div>
         <form class="form">
-          <input type="range" min="0" max="4" value="0" class="inputRange"/>
+          <input type="range" min="0" max="4" value="0" name="range" class="inputRange"/>
+          <button class="no-submit">Submit</button>
         </form>
         <p class="priceCon mobile">
           <span class="price" id="priceMobile">$8</span> &nbsp;/month
@@ -45,7 +46,10 @@
       </div>
       <div class="toggle-container">
         <p>Monthly Billing</p>
-        <span><input type="checkbox" id="toggleButton"/></span>
+        <span>
+          <label for="toggleButton"></label>
+          <input type="checkbox" id="toggleButton" name="checkbox" />
+        </span>
         <p>
           &nbsp;&nbsp;
           <span>Yearly Billing</span>
