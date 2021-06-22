@@ -9,19 +9,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <title>Sunnyside agency landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -29,7 +21,7 @@
     <nav>
       <div class="navbar">
         <a href="#" class="logo-nav">
-          <img src="/images/logo.svg" alt="" class="logo">
+          <img src="./images/logo.svg" alt="" class="logo">
         </a>
         <div class="nav-item">
           <ul class="nav-list">
@@ -60,7 +52,7 @@
         your clients through
         compelling visuals that do most of the marketing for you.</p>
 
-      <a href="#" class="learnmore">Learn more</a>
+      <a href="#" class="learnmore learnmore-1">Learn more</a>
     </div>
   </section>
   <section class="features features2">
@@ -72,12 +64,12 @@
         build and
         extend your brand in digital places.</p>
 
-      <a href="#" class="learnmore">Learn more</a>
+      <a href="#" class="learnmore learnmore-2">Learn more</a>
     </div>
   </section>
   <section class="features features3">
     <div class="features-container3 feature-img-container-mobile features-container-img">
-      <div>
+      <div class="graphic-design">
         <h2>Graphic design</h2>
         <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
           potential
@@ -86,7 +78,7 @@
       </div>
     </div>
     <div class="features-container4 feature-img-container-mobile features-container-img">
-      <div>
+      <div class="photography">
         <h2>
           Photography
         </h2>
@@ -96,37 +88,83 @@
       </div>
     </div>
   </section>
-  <!--
+  <section class="testimonials">
+    <h3 class="client">Client testimonials</h3>
+    <div class="testimonial-container">
+      <div class="testmonial testimonial-1">
+        <div class="profile-img">
+          <img src="./images/image-emily.jpg" alt="person" class="person">
+        </div>
+        <p class="desc">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines
+          were always
+          hit.</p>
+        <h4 class="name">Emily R.</h4>
+        <p class="role">Marketing Director
+        </p>
+      </div>
+      <div class="testmonial testimonial-2">
+        <div class="profile-img">
+          <img src="./images/image-thomas.jpg" alt="person" class="person">
+        </div>
+        <p class="desc">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
+          satisfying and enjoyable
+          experience.</p>
+        <h4 class="name">Thomas S.</h4>
+        <p class="role">Chief Operating Officer
+        </p>
+      </div>
+      <div class="testmonial testimonial-3">
+        <div class="profile-img">
+          <img src="./images/image-jennie.jpg" alt="person" class="person">
+        </div>
+        <p class="desc">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly
+          recommended!</p>
+        <h4 class="name">Jennie F.</h4>
+        <p class="role">Business Owner</p>
+      </div>
+    </div>
+  </section>
+  <article class="pictures">
+    <div class="picture picture1"></div>
+    <div class="picture picture2"></div>
+    <div class="picture picture3"></div>
+    <div class="picture picture4"></div>
+  </article>
+  <footer>
+    <div class="footer">
+      <div class="footer-img">
+        <a href="#">
+          <img src="./images/logo-footer.svg" alt="">
+        </a>
+      </div>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">
+            <i class="fab fa-facebook-square"></i>
+          </a></li>
+        <li><a href="#">
+            <i class="fab fa-instagram"></i>
+          </a></li>
+        <li><a href="#">
+            <i class="fab fa-pinterest"></i>
+          </a>
+        </li>
+        <li><a href="#">
+            <i class="fab fa-twitter"></i>
+          </a></li>
+      </ul>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.github.com/Teja54" target="_blank">Tej Devisetti</a>.
+      </div>
 
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact -->
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://www.github.com/Teja54" target="_blank">Tej Devisetti</a>.
-  </div>
+    </div>
+  </footer>
 
   <script src="app.js"></script>
 </body>
