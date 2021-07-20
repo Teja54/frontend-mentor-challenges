@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+
+</head>
+
+<body>
+  <main class="container" id="container">
+    <img src="./images/logo.svg" alt="logo" class="logo">
+    <section class="wrapper">
+      <article class="bill">
+        <div class="bill_input">
+          <h5>Bill</h5>
+          <div class="input_wrapper">
+            <input class="billInput" type="number" aria-label="Input" placeholder="0" />
+            <img src="./images/icon-dollar.svg" alt="dollar" class="icon">
+          </div>
+        </div>
+        <div class="tip_input" id="tip_buttons">
+          <h5>Select Tip %</h5>
+          <div class="tip_button">
+            <button class="tipPercent active tipText" value="5">5%</button>
+            <button class="tipPercent tipText" value="10">10%</button>
+          </div>
+          <div class="tip_button">
+            <button class="tipPercent tipText" value="15">15%</button>
+            <button class="tipPercent tipText" value="20">20%</button>
+          </div>
+          <div class="tip_button">
+            <button class="tipPercent tipText" value="25">25%</button>
+            <input type="number" placeholder="Custom" id="customInput">
+          </div>
+        </div>
+        <div class="person_input">
+          <div class="person_info">
+            <h5>Number of People</h5>
+            <h6 class="error-text">Can't be zero</h6>
+          </div>
+          <div class="input_wrapper">
+            <input type="number" id="text" name="text" placeholder="0" class="personInput" />
+            <img src="./images/icon-person.svg" alt="person" class="icon">
+          </div>
+        </div>
+      </article>
+      <article class="total">
+        <div class="total_wrapper">
+          <div class="tip_amount">
+            <div class="text">
+              <h5>Tip Amount</h5>
+              <p>/ person</p>
+            </div>
+            <div class="tip_total total_output" id="tipOutput"></div>
+          </div>
+          <div class="total_amount">
+            <div class="text">
+              <h5>Total Amount</h5>
+              <p>/ person</p>
+            </div>
+            <div class="total_bill total_output" id="totalOutput"></div>
+          </div>
+        </div>
+        <button id="reset">Reset</button>
+      </article>
+    </section>
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.github.com/Teja54" target="_blank">Teja Devisetti</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
